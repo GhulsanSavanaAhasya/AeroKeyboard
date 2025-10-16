@@ -4,10 +4,10 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: rgb(46, 46, 46);
 }
 
 body{
+    color: rgb(46, 46, 46);
     font-family: "Ubuntu", sans-serif;
     height: 2000px;
     background-color: rgb(247, 247, 247);
@@ -125,12 +125,12 @@ body{
     align-items: center;
     background-color: rgb(46, 46, 46);
     width: 25%;
-    margin: 0.5rem 0;
+    margin: 2rem 0;
     padding: 0.2rem 0.2rem 0.2rem 0;
     border-radius: 4px;
 }
 .sub-title .horizontal-line{
-    padding: 0.25rem 1.5rem;
+    padding: 0.2rem 1.5rem;
     background-color: rgb(251, 255, 28);
     width: 1rem;
     margin: 1rem 1rem 1rem 1rem ;
@@ -180,9 +180,97 @@ body{
     width: 80%;
     margin: 50px auto;
 }
-.contact-content{
+.contact-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid rgb(251, 255, 28);
+
+}
+.contact-information{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    padding: 2rem;
+}
+.contact-information span{
+    font-family: "Bungee", sans-serif;
+    font-size: 1.3rem;  
+}
+.contact-items-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 50px auto;
+    gap: 1rem;
+    
+}
+.contact-items-container .contact-items p{
+    font-size: 0.8rem;
+}
+.contact-items-container .contact-items span{
+    color: rgb(251, 255, 28);
+}
+.contact-items-container .contact-items{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.contact-content{
+    margin-left: 1rem;
+}
+
+.social-media{
+    display: grid;
+    gap: 1rem;
+    place-content: center;
+    text-align: center;
+
+}
+.social-media .social-media-icon{
+    display: flex;
+    gap: 2rem;
+}
+.social-media .social-media-icon a{
+    color: rgb(251, 255, 28);
+}
+
+form{
+    display: grid;
+    gap: 1rem;
+}
+.contact-form{
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    background-color: white;
+}
+.contact-form label{
+    display: block;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.contact-form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-input.name-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2rem;
+}
+.form-input textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 0.5rem;
+}
+.contact-form .btn-submit{
+    background-color: rgb(46, 46, 46);
+    color: rgb(251, 255, 28);
+    border-radius: 4px;
+    font-size: 1rem;
+    border: none;
+    padding: 1rem 2rem;
 }
 
 footer{
