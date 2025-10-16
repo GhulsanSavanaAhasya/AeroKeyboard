@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(46, 46, 46);
+}
+
+body{
+    height: 2000px;
+    background-color: rgb(247, 247, 247);
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(251, 255, 28);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav-container p{
+    font-family: "Bungee", sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(46, 46, 46);
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: white;
+}
+.nav-container span{
+    font-family: "Bungee", sans-serif;
+    color: rgb(251, 255, 28);
+}
+
+.nav-container ul{
+    display: flex;
+    gap: 2rem;
+}
+.nav-container ul li a{
+    color: rgb(46, 46, 46);
+}
+.logo a{
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/img-header.jpg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    text-align: center;
+}
+.hero h1{
+    font-family: "Bungee", sans-serif;
+    color: white;
+}
+.hero p{
+    color: white;
+    padding: 2rem 8rem;
+}
+.hero a{
+    /* border: 1px solid black; */
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    background-color: rgb(251, 255, 28);
+    text-transform: uppercase;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.features{
+    width: 70%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.features-item{
+    border-left: 5px solid rgb(251, 255, 28);
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0 4px 4px 0;
+}
+.features h2{
+    font-family: "Bungee", sans-serif;
+}
+.features p{
+    padding: 1rem;
+}
+
+.gallery{
+    width: 80%;
+    margin: 50px auto;
+}
+.gallery ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border: 5px solid white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+/* .sub-title{
+    display: flex;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    width: 25%;
+    margin: 0.5rem 0;
+    padding: 0.2rem 0.2rem 0.2rem 0;
+    border-radius: 4px;
+}
+.sub-title .horizontal-line{
+    padding: 0.25rem 1.5rem;
+    background-color: rgb(251, 255, 28);
+    width: 1rem;
+    margin: 1rem 1rem 1rem 1rem ;
+}
+.sub-title h2{
+    font-family: "Bungee", sans-serif;
+    color: white;
+} */
+
+.reviews{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.review-items{
+    background-color: red;
+    padding: 2rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+}
+.review-items span{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}   
+.profile{
+    /* padding: 2rem; */
+    background-color: blue;
+    width: 4rem;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+.profile img{
+    border-radius: 50%;
+}
