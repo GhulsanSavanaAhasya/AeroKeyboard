@@ -12,7 +12,36 @@ body{
     height: 2000px;
     background-color: rgb(247, 247, 247);
 }
+/* Dark mode */
+.dark {
+    background-color: rgb(46, 46, 46);
+    /* color: rgb(247, 247, 247); */
+}
 
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.moon {
+    display: none;
+}
+
+.dark .sun {
+    display: none;
+}
+.dark .moon {
+    display: inline-block;
+}
+
+.dark .sub-title {
+    background-color: #fff;
+}
+.dark .sub-title h2 {
+    color: rgb(46, 46, 46);
+}
+/* Akhir dark mode */
 .nav-container{
     display: flex;
     justify-content: space-around;
